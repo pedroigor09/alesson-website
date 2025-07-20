@@ -67,19 +67,19 @@ const AllessonSite = () => {
 
   const videos = [
     {
-      src: "/namoro.mp4",
+      src: `${BASE_PATH}/namoro.mp4`,
       title: "O Pedido de Namoro",
       description: "Quando a vida te apresenta o amor verdadeiro",
       emotion: "❤️ O momento que mudou tudo para sempre",
     },
     {
-      src: "/aniversario.mp4",
+      src: `${BASE_PATH}/aniversario.mp4`,
       title: "Aniversários Temáticos",
       description: "Celebrando a vida com estilo único",
       emotion: "🎉 Cada ano uma nova aventura épica",
     },
     {
-      src: "/sonhocarro.mp4",
+      src: `${BASE_PATH}/sonhocarro.mp4`,
       title: "Sonho do Carro",
       description: "Realizando o sonho do pai",
       emotion: "🚗 Quando o filho realiza o sonho do herói",
@@ -89,7 +89,7 @@ const AllessonSite = () => {
   // Moodboard do Estilo Alesson - Rockstar Level! 🔥
   const moodboardSlides = [
     {
-      image: "/carrossel1.jpg",
+      image: `${BASE_PATH}/carrossel1.jpg`,
       title: "Bahia Chic Vibes",
       subtitle: "O estilo que conquista",
       colors: ["#FF6B35", "#F7931E", "#FFD23F", "#06FFA5"],
@@ -97,7 +97,7 @@ const AllessonSite = () => {
       style: "Casual Elegante"
     },
     {
-      image: "/carrossel2.jpg",
+      image: `${BASE_PATH}/carrossel2.jpg`,
       title: "Pagodão Clean",
       subtitle: "Elegância com raízes",
       colors: ["#4ECDC4", "#44A08D", "#093637", "#20BDFF"],
@@ -105,7 +105,7 @@ const AllessonSite = () => {
       style: "Moderno Baiano"
     },
     {
-      image: "/carrossel3.jpg",
+      image: `${BASE_PATH}/carrossel3.jpg`,
       title: "Salvador Style",
       subtitle: "Autenticidade pura",
       colors: ["#FD79A8", "#FDCB6E", "#6C5CE7", "#A29BFE"],
@@ -113,7 +113,7 @@ const AllessonSite = () => {
       style: "Urbano Tropical"
     },
     {
-      image: "/carrossel4.jpg",
+      image: `${BASE_PATH}/carrossel4.jpg`,
       title: "Sunset Energy",
       subtitle: "Energia contagiante",
       colors: ["#FF7675", "#FDCB6E", "#E17055", "#00B894"],
@@ -121,7 +121,7 @@ const AllessonSite = () => {
       style: "Lifestyle Bahia"
     },
     {
-      image: "/carrossel5.jpg",
+      image: `${BASE_PATH}/carrossel5.jpg`,
       title: "Rockstar Mood",
       subtitle: "Atitude em cada look",
       colors: ["#2D3436", "#636E72", "#FFEAA7", "#55A3FF"],
@@ -774,7 +774,7 @@ const rockstarMessages = [
           }}
         >
           <img
-            src="/alesson2.jpg"
+            src={`${BASE_PATH}/alesson2.jpg`}
             alt="Alesson - Momento Profissional"
             className="w-full h-4/5 object-cover rounded-xl"
           />
@@ -793,7 +793,7 @@ const rockstarMessages = [
           }}
         >
           <img
-            src="/alesson3.jpg"
+            src={`${BASE_PATH}/alesson3.jpg`}
             alt="Alesson - Lifestyle"
             className="w-full h-4/5 object-cover rounded-xl"
           />
@@ -948,7 +948,7 @@ const rockstarMessages = [
             {/* Foto do Alesson como fundo do card inteiro */}
             <div className="absolute inset-0 rounded-3xl overflow-hidden">
               <img
-                src="/alesson4.jpg"
+                src={`${BASE_PATH}/alesson4.jpg`}
                 alt="Alesson"
                 className="w-full h-full object-cover"
                 style={{ objectPosition: "center top" }}
@@ -1038,7 +1038,7 @@ const rockstarMessages = [
                   playsInline
                   className="w-full h-full object-cover"
                 >
-                  <source src="/alessonvideo1.mp4" type="video/mp4" />
+                  <source src={`${BASE_PATH}/alessonvideo1.mp4`} type="video/mp4" />
                 </video>
                 {/* Dark overlay for readability */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
@@ -1174,7 +1174,7 @@ const rockstarMessages = [
         {/* Imagem de fundo cobrindo toda a seção */}
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="/alessoncapa.jpg"
+            src={`${BASE_PATH}/alessoncapa.jpg`}
             alt="Alesson Background"
             className="w-full h-full object-cover"
             style={{ objectPosition: "center center" }}
@@ -1222,7 +1222,7 @@ const rockstarMessages = [
                         {/* Foto do blogueiro */}
                         <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-rose-400 rounded-full flex items-center justify-center shadow-lg flex-shrink-0 overflow-hidden">
                         <img
-                          src="/guitube1.jpg"
+                          src={`${BASE_PATH}/guitube1.jpg`}
                           alt="Guitube"
                           className="w-full h-full object-cover"
                         />
@@ -1260,7 +1260,7 @@ const rockstarMessages = [
                         {/* Foto do blogueiro */}
                         <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-orange-400 rounded-full flex items-center justify-center shadow-lg flex-shrink-0 overflow-hidden">
                         <img
-                          src="/sheuba1.png"
+                          src={`${BASE_PATH}/sheuba1.png`}
                           alt="Sheuba"
                           className="w-full h-full object-cover"
                         />
@@ -1994,7 +1994,7 @@ const rockstarMessages = [
       {/* Audio para o Alesson Mode */}
       <audio
         ref={audioRef}
-        src="/bloquinho3.mp3"
+        src={`${BASE_PATH}/bloquinho3.mp3`}
         loop
         preload="metadata"
         className="hidden"
