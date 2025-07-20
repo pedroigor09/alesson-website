@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Animações customizadas para o site do Alesson */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes particle-float {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
+
+@keyframes explosion-burst {
+  0% { transform: scale(0) rotate(0deg); opacity: 1; }
+  100% { transform: scale(2) rotate(180deg); opacity: 0; }
+}
+
+@keyframes screen-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  75% { transform: translateX(2px); }
+}
+
+@keyframes rockstar-shake {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  25% { transform: translateX(-1px) translateY(-1px); }
+  50% { transform: translateX(1px) translateY(1px); }
+  75% { transform: translateX(-1px) translateY(1px); }
+}
+
+@keyframes glitch {
+  0%, 100% { transform: translateX(0); filter: hue-rotate(0deg); }
+  20% { transform: translateX(-2px); filter: hue-rotate(90deg); }
+  40% { transform: translateX(2px); filter: hue-rotate(180deg); }
+  60% { transform: translateX(-1px); filter: hue-rotate(270deg); }
+  80% { transform: translateX(1px); filter: hue-rotate(360deg); }
+}
+
+@keyframes glitch-scan {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes glitch-slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes static-noise {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.3; }
+}
+
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-particle-float { animation: particle-float linear; }
+.animate-explosion-burst { animation: explosion-burst 1s ease-out forwards; }
+.animate-screen-shake { animation: screen-shake 0.5s ease-in-out infinite; }
+.animate-rockstar-shake { animation: rockstar-shake 0.3s ease-in-out infinite; }
+.animate-glitch { animation: glitch 0.3s ease-in-out infinite; }

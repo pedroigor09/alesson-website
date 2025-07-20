@@ -17,6 +17,9 @@ import {
   ChevronRight,
 } from "lucide-react";
 
+// Base path for GitHub Pages
+const BASE_PATH = '/alesson-website';
+
 const AllessonSite = () => {
   const [clickedCards, setClickedCards] = useState<Record<number, boolean>>({});
   const [scrollY, setScrollY] = useState(0);
